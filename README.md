@@ -1,1 +1,1 @@
-# CTS
+# CTS Seminar
