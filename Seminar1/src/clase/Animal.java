@@ -5,6 +5,7 @@ public abstract class Animal {
 
 	public String getNume() {
 		return nume;
+		//test
 	}
 
 	public void setNume(String nume) {
