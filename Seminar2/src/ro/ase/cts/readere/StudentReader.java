@@ -6,14 +6,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Student;
 
-public class StudentReader {
+//pentru functie nu am nevoie de un obiect -- static -- nu pot folosi this
+
+public class StudentReader extends AplicantReader {
 	
-	public static List<Student> readStudents(String file) throws FileNotFoundException, NumberFormatException {
-		Scanner input = new Scanner(new File(file));
+	public StudentReader(String file) {
+		super(file);
+	}
+	
+	public List<Aplicant> citesteAplicanti() throws FileNotFoundException {
+		Scanner input = new Scanner(new File(getFileName()));
 		input.useDelimiter(",|\n");
-		List<Student> studenti = new ArrayList<Student>();
+		List<Aplicant> studenti = new ArrayList<Aplicant>();
 
 		while (input.hasNext()) {
 			String nume = input.next();
