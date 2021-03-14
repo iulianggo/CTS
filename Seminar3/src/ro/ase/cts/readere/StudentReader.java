@@ -9,7 +9,7 @@ import java.util.Scanner;
 import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Student;
 
-//pentru functie nu am nevoie de un obiect -- static -- nu pot folosi this
+//pentru functie nu am nevoie de un obiect -- static -- nu pot folosi this VS metoda
 
 public class StudentReader extends AplicantReader {
 	
