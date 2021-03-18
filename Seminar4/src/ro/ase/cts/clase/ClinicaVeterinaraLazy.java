@@ -15,7 +15,7 @@ public class ClinicaVeterinaraLazy {
 		this.buget = buget;
 	}
 	
-	public static ClinicaVeterinaraLazy getInstanta(String nume, String adresa, int nrMedici, float buget) {
+	public static synchronized ClinicaVeterinaraLazy getInstanta(String nume, String adresa, int nrMedici, float buget) {
 //		return instanta == null ? new ClinicaVeterinaraLazy(nume, adresa, nrMedici, buget) : instanta;
 		if(instanta == null) {
 			instanta = new ClinicaVeterinaraLazy(nume, adresa, nrMedici, buget);
