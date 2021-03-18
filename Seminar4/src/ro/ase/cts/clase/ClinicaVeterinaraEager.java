@@ -42,7 +42,7 @@ public class ClinicaVeterinaraEager {
 	public void setNrMedici(int nrMedici) {
 		this.nrMedici = nrMedici;
 	}
-
+//
 	public float getBuget() {
 		return buget;
 	}
