@@ -1,21 +1,25 @@
 package ro.ase.cts.clase;
 
-public class ClinicaVeterinaraEager {
+public class ClinicaVeterinaraLazy {
 	private String nume;
 	private String adresa;
 	private int nrMedici;
 	private float buget;
-	//Instanta statica este initializata la momentul declararii
-	private static final ClinicaVeterinaraEager instanta = new ClinicaVeterinaraEager();
 	
-	private ClinicaVeterinaraEager() {
-		this.nume = "ClinVet";
-		this.adresa = "Str.Clinica";
-		this.nrMedici = 4;
-		this.buget = 1000;
+	private static ClinicaVeterinaraLazy instanta = null;
+
+	private ClinicaVeterinaraLazy(String nume, String adresa, int nrMedici, float buget) {
+		this.nume = nume;
+		this.adresa = adresa;
+		this.nrMedici = nrMedici;
+		this.buget = buget;
 	}
 	
-	public static ClinicaVeterinaraEager getInstanta() {
+	public static ClinicaVeterinaraLazy getInstanta(String nume, String adresa, int nrMedici, float buget) {
+//		return instanta == null ? new ClinicaVeterinaraLazy(nume, adresa, nrMedici, buget) : instanta;
+		if(instanta == null) {
+			instanta = new ClinicaVeterinaraLazy(nume, adresa, nrMedici, buget);
+		}
 		return instanta;
 	}
 
@@ -50,11 +54,10 @@ public class ClinicaVeterinaraEager {
 	public void setBuget(float buget) {
 		this.buget = buget;
 	}
-
+	
 	@Override
 	public String toString() {
 		return nume + " "  + adresa + " " + nrMedici + " " + buget;
 	}
-	
 	
 }
