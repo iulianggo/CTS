@@ -1,8 +1,8 @@
-package ro.ase.cts.program;
+package ro.ase.cts.simpleFactory.program;
 
-import ro.ase.cts.clase.Categorie;
-import ro.ase.cts.clase.CategorieFactory;
-import ro.ase.cts.clase.CategoriiMedicamente;
+import ro.ase.cts.simpleFactory.clase.Categorie;
+import ro.ase.cts.simpleFactory.clase.CategorieFactory;
+import ro.ase.cts.simpleFactory.clase.CategoriiMedicamente;
 
 public class Program {
 	public static CategoriiMedicamente getTipCategorie() {

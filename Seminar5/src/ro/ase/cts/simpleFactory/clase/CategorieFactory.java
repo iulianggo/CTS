@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.simpleFactory.clase;
 
 import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory.Default;
 

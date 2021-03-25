@@ -1,8 +1,8 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.simpleFactory.clase;
 
-public class Raceala extends Categorie {
+public class Durere extends Categorie {
 
-	public Raceala(float pretDeBaza) {
+	public Durere(float pretDeBaza) {
 		super(pretDeBaza);
 		// TODO Auto-generated constructor stub
 	}

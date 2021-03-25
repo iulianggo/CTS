@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.factoryMethod.clase;
 
 public abstract class Categorie {
 	private float pretDeBaza;
@@ -10,11 +10,13 @@ public abstract class Categorie {
 	public float getPretDeBaza() {
 		return pretDeBaza;
 	}
-	
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return String.valueOf(getPretDeBaza());
+		return super.toString();
 	}
+	
+	
 
 }
