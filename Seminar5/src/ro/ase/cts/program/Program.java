@@ -11,7 +11,8 @@ public class Program {
 
 	public static void main(String[] args) {
 		try {
-			//Problema 1 din pachetul C
+//			Problema 1 din pachetul C
+//			Simple Factory
 			CategorieFactory factory = new CategorieFactory();
 			Categorie durere = factory.creareCategorie(CategoriiMedicamente.Durere, 25);
 			Categorie body = factory.creareCategorie(CategoriiMedicamente.Body, 20);
