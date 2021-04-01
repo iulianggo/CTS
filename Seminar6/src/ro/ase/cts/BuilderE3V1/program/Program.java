@@ -15,8 +15,6 @@ public class Program {
 		
 		System.out.println(rezervare.toString() + "\n" + rezervare1.toString());
 		
-		
-
 	}
 
 }
