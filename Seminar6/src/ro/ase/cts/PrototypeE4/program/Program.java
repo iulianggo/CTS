@@ -22,6 +22,8 @@ public class Program {
 		System.out.println(bilet.toString());
 		System.out.println(biletCopy.toString());
 		System.out.println(biletCopy1.toString());
+		
+		//FA si varianta de builder cu inner Class
 
 	}
 
