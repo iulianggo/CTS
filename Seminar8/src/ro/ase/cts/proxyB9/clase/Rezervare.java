@@ -12,8 +12,6 @@ public class Rezervare implements IRezervare{
 	public int getNrPersoane() {
 		return nrPersoane;
 	}
-	
-	
 
 	public void setNrPersoane(int nrPersoane) {
 		this.nrPersoane = nrPersoane;

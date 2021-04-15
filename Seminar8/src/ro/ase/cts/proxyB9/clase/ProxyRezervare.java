@@ -11,7 +11,7 @@ public class ProxyRezervare implements IRezervare {
 
 	@Override
 	public void anuntaRezervare() {
-		if(rezervare.getNrPersoane() > NR_MINIM_PERSOANE) {
+		if(rezervare.getNrPersoane() >= NR_MINIM_PERSOANE) {
 			rezervare.anuntaRezervare();
 		}else {
 			System.out.println("Prezentati va fizic la restaurant");
