@@ -50,5 +50,13 @@ public class Student {
         }
         throw new IndexOutOfBoundsException();
     }
-
+    
+    public boolean areRestante() {
+    	for(int nota:note) {
+    		if(nota<5) {
+    			return true;
+    		}
+    	}
+    	return false;
+    }
 }
