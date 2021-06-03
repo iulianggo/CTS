@@ -29,6 +29,10 @@ public class Grupa {
     public void adaugaStudent(IStudent student){
         studenti.add(student);
     }
+    
+    public List<IStudent> getListaStudenti() {
+    	return this.studenti;
+    }
 
     public IStudent getStudent(int index){
         if(index>=0 && index< studenti.size()){
