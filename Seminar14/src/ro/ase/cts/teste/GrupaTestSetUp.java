@@ -5,7 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+import ro.ase.cts.categorii.TesteGetPromovabilitate;
 import ro.ase.cts.clase.Grupa;
 import ro.ase.cts.clase.Student;
 
@@ -30,6 +32,7 @@ public class GrupaTestSetUp {
 	
 //	Right
 	@Test()
+	@Category(TesteGetPromovabilitate.class)
 	public void testRightPromovabilitate() {
 		Grupa grupa = new Grupa(1005);
 		for(int i = 0 ; i < 10 ; i++) {
@@ -42,6 +45,7 @@ public class GrupaTestSetUp {
 	
 	//Boundary
 	@Test()
+	@Category(TesteGetPromovabilitate.class)
 	public void testLimitaInferioaraPromovabilitate() {
 		Grupa grupa = new Grupa(1005);
 		for(int i = 0 ; i < 10 ; i++) {
@@ -53,6 +57,7 @@ public class GrupaTestSetUp {
 	}
 	
 	@Test()
+	@Category(TesteGetPromovabilitate.class)
 	public void testLimitaSuperioaraPromovabilitate() {
 		Grupa grupa = new Grupa(1005);
 		for(int i = 0 ; i < 10 ; i++) {
@@ -64,17 +69,20 @@ public class GrupaTestSetUp {
 	}
 	
 	@Test()
+	@Category(TesteGetPromovabilitate.class)
 	public void testBoundaryPromovabilitate() {
 		Grupa grupa = new Grupa(1005);
 		assertEquals(0, grupa.getPromovabilitate(), 0.0001f);
 	}
 	
 	@Test(timeout = 100)
+	@Category(TesteGetPromovabilitate.class)
 	public void testPerformancePromovabilitate() {
 		grupa.getPromovabilitate();
 	}
 	
 	@Test()
+	@Category(TesteGetPromovabilitate.class)
 	public void testCardinalityPromovabilitate() {
 		Grupa grupa = new Grupa(1005);
 		Student student = new Student();
